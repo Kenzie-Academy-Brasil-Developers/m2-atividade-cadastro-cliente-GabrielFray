@@ -20,12 +20,13 @@ const objetoEditar = [...formEditar.elements];
 function filtrarCliente() {
   const clienteFiltrado = clientes.find(
     (elem) => elem.nome === buscarClientes.value
-  );
-  if (clienteFiltrado) {
+    );
+    console.log(clienteFiltrado)
+    if (clienteFiltrado) {
     const endereco = clienteFiltrado.endereco;
     formEditar[0].value = clienteFiltrado.nome;
     formEditar[1].value = clienteFiltrado.endereco;
-    formEditar[2].value = clienteFiltrado.data_nasc;
+    formEditar[2].value = clienteFiltrado.sexo;
     formEditar[3].value = clienteFiltrado.email;
     formEditar[4].value = endereco.cep;
     formEditar[5].value = endereco.rua;
@@ -34,6 +35,7 @@ function filtrarCliente() {
     formEditar[8].value = endereco.cidade;
     formEditar[9].value = endereco.estado;
     formEditar[10].value = clienteFiltrado.telefone;
+  
   }
 }
 
