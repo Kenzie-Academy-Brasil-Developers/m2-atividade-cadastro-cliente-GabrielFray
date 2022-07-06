@@ -19,7 +19,7 @@ class Api {
   }
 
   static async cadastrarCliente(data) {
-    await fetch("https://atividade-api-clientes.herokuapp.com/clientes", {
+    await fetch("https://atividade-api-clientes.herokuapp.com/clientes/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,14 +27,11 @@ class Api {
       body: JSON.stringify(data),
     });
   }
-  
+
   static async deletarCliente(id) {
-    const response = await fetch(
-      "https://atividade-api-clientes.herokuapp.com/clientes/" + id,
-      {
-        method: "DELETE",
-      }
-    );
+    await fetch("https://atividade-api-clientes.herokuapp.com/clientes/" + id, {
+      method: "DELETE",
+    });
   }
 }
 
