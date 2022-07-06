@@ -16,19 +16,14 @@
     </header>
     <section>
       <h2>Cadastrar um novo cliente</h2>
-
-      <form action="#">
+      <form id="form_cadastro" action="#">
         <input type="text" name="nome" placeholder="Nome completo" />
         <input type="date" name="data_nasc" />
         <select name="sexo" id="sexo">
           <option value="Masculino">Masculino</option>
           <option value="Feminino">Feminino</option>
         </select>
-        <input
-          type="email"
-          name="email"
-          placeholder="bruno_monteiro@cordeiromaquinas.com.br"
-        />
+        <input type="email" name="email" placeholder="Digite seu email" />
 
         <hr />
         <h3>Cadastrar Endereço:</h3>
@@ -72,9 +67,9 @@
         <h3>Cadastrar Contato:</h3>
         <input type="tel" name="telefone_fixo" placeholder="7928955976" />
 
-        <button>Cadastrar</button>
+        <button class="btn-cadastrar">Cadastrar</button>
       </form>
     </section>
-    <script  type="module" src="../js/Api.js"></script>
+    <script type="module" src="../js/cadastrar.js"></script>
   </body>
 </html>
