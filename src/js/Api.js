@@ -18,8 +18,16 @@ class Api {
     });
   }
 
-  static async cadastrarCliente(data) {}
-
+  static async cadastrarCliente(data) {
+    await fetch("https://atividade-api-clientes.herokuapp.com/clientes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+  }
+  
   static async deletarCliente(id) {
     const response = await fetch(
       "https://atividade-api-clientes.herokuapp.com/clientes/" + id,
