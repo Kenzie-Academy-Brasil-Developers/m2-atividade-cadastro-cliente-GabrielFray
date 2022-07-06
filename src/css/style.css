@@ -1,81 +1,90 @@
-body{
-    font-family: sans-serif;
-    padding: 30px;
+body {
+  font-family: sans-serif;
+  padding: 30px;
+  background-color: #161718;
+  color: #fff;
 }
-input, textarea, button{
-    font-family: inherit;
-    box-sizing: border-box;
-}
-
-.container{
-    width: 100%;
-    max-width: 550px;
-    margin: 0 auto;
-    background-color: #001457;
-    color: #fff;
-    padding: 30px;
+input,
+textarea,
+button {
+  font-family: inherit;
+  box-sizing: border-box;
 }
 
-header h1{
-    font-size: 2rem;
-    font-weight: 600;
-}
-header{
-    display: flex;
-    justify-content: end;
-}
-header a{
-    padding: 10px;
-    background: #858585;
-    border-radius: 3px;
-    margin: 0 3px;
-    text-decoration: none;
-    color: #fff;
-
+.container {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: #001457;
+  color: #fff;
+  padding: 30px;
 }
 
-main form{
-    text-align: right;
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
 }
-main form input, main form textarea, main form button{
-    display: block;
-    width: 100%;
-    font-size: 0.9rem;
-    outline: none;
+header {
+  display: flex;
+  justify-content: end;
 }
-main form input, main form textarea{
-    border: none;
-    padding: 13px;
-    margin: 0 0 18px;
-}
-main form textarea{
-    resize: none;
-    height: 100px;
-}
-ul{
-    list-style: none;
-}
-li{
-    margin-bottom: 100px;
-    border-bottom: solid 2px #ccc;
-}
-li h3{
-    margin-top: 30px;
+header a {
+  padding: 10px;
+  background: #858585;
+  border-radius: 3px;
+  margin: 0 3px;
+  text-decoration: none;
+  color: #fff;
 }
 
-input,select,button{
-    display: block;
-    margin: 10px;
-    width: 100%;
-    max-width: 400px;
-    height: 40px;
-    padding: 10px;
-    border: solid 1px #ccc;
-    border-radius: 3px;
-    
+main form {
+  text-align: right;
 }
-button{
-    cursor: pointer;
-    background-color: #858585;
-    color: #fff;
+main form input,
+main form textarea,
+main form button {
+  display: block;
+  width: 100%;
+  font-size: 0.9rem;
+  outline: none;
+}
+main form input,
+main form textarea {
+  border: none;
+  padding: 13px;
+  margin: 0 0 18px;
+}
+main form textarea {
+  resize: none;
+  height: 100px;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin-bottom: 100px;
+  border-bottom: solid 2px #ccc;
+}
+li h3 {
+  margin-top: 30px;
+}
+
+input,
+select,
+button {
+  display: block;
+  margin: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  padding: 10px;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  background-color: #0f1111;
+  color: #fff;
+}
+button {
+  cursor: pointer;
+  background-color: #858585;
+  color: #fff;
 }
